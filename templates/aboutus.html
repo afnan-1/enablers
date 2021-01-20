@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      {% load static %}
+      <img
+        class="navbar-brand logoImg"
+        href="#"
+        src="{% static 'images/logo.png' %}"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active ml-5">
+            <a class="nav-link headerLink" href="#"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link headerLink" href="#">Achievements</a>
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link headerLink" href="#">Industries</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <i class="fas fa-search mr-4"></i>
+          <button
+            class="btn btn my-2 my-sm-0 signinBtn text-white"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Collapsed content</h5>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+
+</div>
+     <div class="alert belowHeader" role="alert"> 
+      <div class="container">
+        <a href="#" class="alert-link belowHeader__text">Home</a>
+        <a class="belowHeader__text text-light" href="">>About</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h3 class="purpleColor">About NIDLP</h3>
+      <h1 class="line"></h1>
+
+      <video width="100%" height="340" class="video" controls>
+        <source src="{% static 'video/hello.mp4.mkv' %}" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="d-flex mt-5 aboutus__cards">
+        <div class="generalEnablers col-md-12 col-sm-12 col-lg-6 aboutus__card1">
+          <h3 class="purpleColor">Who Are We!</h3>
+          <h1 class="lineaboutus"></h1>
+          <h4>We are one of the 2030 Vision programs</h4>
+          <img class="aboutusfooter" src="{% static 'images/aboutus1.png' %}" alt="" />
+        </div>
+        <div class="generalEnablers col-md-12 col-sm-12 col-lg-6 aboutus__card2 lightColor">
+          <h3 class="purpleColor">Our Goal!</h3>
+          <h1 class="lineaboutus"></h1>
+          <div class="d-flex">
+            <div class="col-6">
+              <p>
+                To transform the Kingdome Of Saudi Arabia into an industrial
+                power and global logistic hub, and to maximize the value of the
+                energy and mining sectors as well as increasing the focus on the
+                local content and 0.4 industry with the aim of enhancing the
+                economic impact ,growth sustainability and investment
+                opportunities of these sectors
+              </p>
+            </div>
+            <div class="col-6">
+              <img class="aboutusfooter" src="{% static 'images/aboutus2.png' %}" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="purpleColor mt-5">Success Partners:</h3>
+      <h1 class="lineaboutus"></h1>
+      <p>
+        NIDLP works to achieve (000) initiatives by raising the level of
+        integration between its sectors and in partnership with more than 30
+        execution entities.
+      </p>
+      <img class="aboutusfooter" src="{% static 'images/aboutusfooter.png' %}" alt="">
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

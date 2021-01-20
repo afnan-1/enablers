@@ -1,0 +1,147 @@
+.signinBtn {
+  background-color: #703c81;
+  width: 120px;
+  height: 40px;
+  margin-right: 64px;
+}
+.logoImg {
+  width: 160;
+  object-fit: cover;
+  margin-left: 54px;
+}
+.headerLink {
+  color: #989898 !important;
+}
+.belowHeader {
+  background-color: #703c81 !important;
+}
+.belowHeader__text {
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+.purpleColor {
+  color: #703c81 !important;
+}
+.line {
+  /* background-color: #703c81 !important;
+   height: 2px; */
+  border: 1px solid #703c81;
+  width: 289px;
+  margin-top: 16px;
+}
+.lineaboutus {
+  border: 1px solid #703c81;
+  width: 80px;
+  margin-top: 16px;
+}
+.generalEnablers {
+  background-color: #f4f4f4;
+  padding: 24px 26px;
+  border-radius: 10px;
+}
+.specialEnablers {
+  background-color: #fcf4ff;
+  padding: 24px 26px;
+  border-radius: 10px;
+}
+.specialEnablersColor {
+  background-color: #fcf4ff;
+}
+.lightColor {
+  background-color: #f4f4f4;
+}
+.cards {
+  border: none !important;
+}
+.cards__grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card3 {
+  margin-top: -60px;
+}
+.cards_img {
+  width: 126px !important;
+  height: 96px !important;
+}
+.generalEnablers__heading {
+  font-weight: 700;
+  font-size: 24px !important;
+}
+.card__body__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card__body__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.card__body__para {
+  font-size: 14px;
+  color: #606060;
+  font-weight: 400;
+}
+.card__body__para2 {
+  font-size: 14px;
+  color: #101221;
+  font-weight: 400;
+}
+.points {
+  margin-left: -20px;
+}
+.body_content {
+  display: flex;
+}
+.aboutus__card1 {
+  margin-left: -20px;
+  margin-right: 10px;
+}
+.aboutus__card2 {
+  margin-left: 20px;
+  margin-right: -20px;
+  background-color: #fcf4ff;
+}
+.video {
+  object-fit: cover;
+}
+.aboutusfooter {
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .generalEnablers {
+    width: 100% !important;
+  }
+
+  .aboutus__card2 {
+    margin-left: 0 !important;
+  }
+  .aboutus__card1 {
+    margin: 0 0 10px 0 !important;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .aboutus__cards {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .cards__grid{
+      flex-direction: column;
+  }
+  .cards{
+      margin-top: 20px;
+  }
+  .specialEnablers{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-top: 20px;
+  }
+  .body_content{
+      display: flex;
+      flex-direction: column;
+  }
+}

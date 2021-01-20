@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      {% load static %}
+      <img
+        class="navbar-brand logoImg"
+        href="#"
+        src="{% static 'images/logo.png' %}"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ml-5">
+            <a class="nav-link headerLink" href="/aboutus"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link headerLink" href="#">Achievements</a>
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link headerLink" href="#">Industries</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <i class="fas fa-search mr-4"></i>
+          <button
+            class="btn btn my-2 my-sm-0 signinBtn text-white"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="alert belowHeader" role="alert">
+      <div class="container">
+        <a href="#" class="alert-link belowHeader__text">Home</a>
+        <a class="belowHeader__text text-light" href="">>Enablers</a>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container">
+      <h3 class="purpleColor">
+        Localization of industries and technologies support
+      </h3>
+      <h1 class="line"></h1>
+
+      <!-- general enablers -->
+      <div class="body_content">
+        <div class="generalEnablers col-lg-8 col-md-12">
+          <h2 class="generalEnablers__heading">General enablers</h2>
+          <hr />
+          <div class="cards__grid">
+            <div class="card lightColor cards col-sm-12 col-md-12 col-lg-6">
+              {% load static %}
+              <img
+                src="{% static 'images/card1.png' %}"
+                class="card-img-top cards_img"
+                alt="..."
+              />
+              <div class="card__body mt-3">
+                <h5 class="card__body__title purpleColor">Local Content</h5>
+                <p class="card__body__text">
+                  New policies to support and favor the local product:
+                </p>
+                <!-- <span class="dot d-inline">.</span> -->
+                <ul class="points">
+                  <li class="card__body__para">
+                    Price preference policy for the national product
+                  </li>
+                  <li class="card__body__para">
+                    A mandatory list of national products
+                  </li>
+                  <li class="card__body__para">
+                    Policies of the minimum required for local content from
+                    contracting companies
+                  </li>
+                  <li class="card__body__para">
+                    Include a weight for local content in the financial
+                    evaluation, except for supply contracts
+                  </li>
+                  <li class="card__body__para">
+                    Fee exemption for authorized imports for industrial
+                    Companies (such as raw materials, machinery and equipment)
+                  </li>
+                </ul>
+                <a href="">Download PDF</a>
+              </div>
+            </div>
+
+            <div class="card lightColor cards col-sm-12 col-md-12 col-lg-6">
+              {% load static %}
+              <img
+                src="{% static 'images/card2.png' %}"
+                class="card-img-top cards_img"
+                alt="..."
+              />
+              <div class="card__body mt-3">
+                <h5 class="card__body__title purpleColor">
+                  Financial Enablement
+                </h5>
+                <p class="card__body__text">
+                  Several programs and products targeting the program sectors:
+                </p>
+
+                <ul class="points">
+                  <li class="card__body__para">
+                    Increase the capital of the Saudi Industrial Development
+                    Fund to finance all program sectors
+                  </li>
+                  <li class="card__body__para">
+                    “Tanafusya” program, which provides financing and advisory
+                    services to raise the competitiveness of the local product
+                    and improve productivity.
+                  </li>
+                  <li class="card__body__para">
+                    "Tawteen" program to support and enhance the trend of
+                    increasing spending on local content and to facilitate.
+                    Promote and finance supply chain localization opportunities
+                  </li>
+                  <li class="card__body__para">
+                    Working capital financing product.
+                  </li>
+                  <li class="card__body__para">
+                    Multipurpose financing product.
+                  </li>
+                  <li class="card__body__para">Opening Letters of Credit.</li>
+                  <li class="card__body__para">
+                    Acquisition financing product.
+                  </li>
+                </ul>
+              </div>
+              <a href="">Download PDF</a>
+            </div>
+
+            <div
+              class="card lightColor cards col-sm-12 col-md-12 col-lg-6 card3"
+            >
+              {% load static %}
+              <img
+                src="{% static 'images/card3.png' %}"
+                class="card-img-top cards_img"
+                alt="..."
+              />
+              <div class="card__body mt-3">
+                <h5 class="card__body__title purpleColor">Human Capital</h5>
+                <p class="card__body__text">
+                  Several programs to support the development of the workforce:
+                </p>
+                <!-- <span class="dot d-inline">.</span> -->
+                <ul class="points">
+                  <li class="card__body__para">
+                    “Mumken" program to provide training support to private
+                    sector enterprises through specialized training programs to
+                    raise the skills of the workforce to keep pace with the
+                    current need.
+                  </li>
+                  <li class="card__body__para">
+                    Employment support program through temporary coverage of
+                    Saudi manpower costs
+                  </li>
+                </ul>
+                <a href="">Download PDF</a>
+              </div>
+            </div>
+
+            <div class="card lightColor cards col-sm-12 col-md-12 col-lg-6">
+              {% load static %}
+              <img
+                src="{% static 'images/card4.png' %}"
+                class="card-img-top cards_img"
+                alt="..."
+              />
+              <div class="card__body mt-3">
+                <h5 class="card__body__title purpleColor">
+                  Industrial cities and special economic zones
+                </h5>
+                <p class="card__body__text">
+                  High readiness for infrastructure:
+                </p>
+                <!-- <span class="dot d-inline">.</span> -->
+
+                <ul class="points">
+                  <li class="card__body__para">
+                    40+ industrial cities with competitive services and prices
+                  </li>
+                  <li class="card__body__para">
+                    Value parks linked to a common service base.
+                  </li>
+                  <li class="card__body__para">
+                    Ready-to-use and operational Factories.
+                  </li>
+                  <li class="card__body__para">
+                    Special economic cities targeting promising industries
+                  </li>
+                </ul>
+                <a href="">Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="specialEnablers ml-4 col-lg-4 col-md-12">
+          <h2 class="generalEnablers__heading">Special enablers</h2>
+          <hr />
+          <div class="card specialEnablersColor cards">
+            {% load static %}
+            <img
+              src="{% static 'images/cardr1.png' %}"
+              class="card-img-top cards_img"
+              alt="..."
+            />
+            <div class="card__body mt-3">
+              <h5 class="card__body__title purpleColor">
+                Off-take agreement contracts
+              </h5>
+              <!-- <span class="dot d-inline">.</span> -->
+              <ul class="points mt-3">
+                <li class="card__body__para2">
+                  In the event of localizing an industry or transferring
+                  technology in accordance with certain conditions, including
+                  supply and demand data and quality standards, and that the
+                  localization of the industry or the transfer of knowledge does
+                  not result in a monopoly over it.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="card specialEnablersColor cards">
+            {% load static %}
+            <img
+              src="{% static 'images/cardr2.png' %}"
+              class="card-img-top cards_img"
+              alt="..."
+            />
+            <div class="card__body mt-3">
+              <h5 class="card__body__title purpleColor">
+                Activating local product protection policies
+              </h5>
+              <!-- <span class="dot d-inline">.</span> -->
+              <ul class="points mt-3">
+                <li class="card__body__para2">
+                  including amending customs duties on imported products in a
+                  way that does not contradict international trade agreements.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="card specialEnablersColor cards">
+            {% load static %}
+            <img
+              src="{% static 'images/cardr3.png' %}"
+              class="card-img-top cards_img"
+              alt="..."
+            />
+            <div class="card__body mt-3">
+              <h5 class="card__body__title purpleColor">
+                Special financing solutions
+              </h5>
+              <!-- <span class="dot d-inline">.</span> -->
+              <ul class="points mt-3">
+                <li class="card__body__para2">
+                  and support from the leading national companies, including
+                  Nusaned, Wa'ed, and others ...
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="purpleColor mt-5">
+        Localization of industries and technologies support
+      </h3>
+      <h1 class="line"></h1>
+      <div class="alert belowHeader mt-5" role="alert">
+        <img
+          class="aboutusfooter"
+          src="{% static 'images/footer.png' %}"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
